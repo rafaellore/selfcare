@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+body{
+  background-color: #fff;
+}
+.container-products{
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.promotion{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  font-weight: bold;
+}
+
+body::-webkit-scrollbar {
+  width: 9px;            /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #C4C4C4;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #C4C4C4;  /* creates padding around scroll thumb */
+  
+}
+@media (max-width: 375px) {
+
+  body{
+    max-width: 100vw;
+  }
+
+  .container-products{
+    margin: 0;
+    margin-top: -60px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+
+  .promotion{
+    padding: 30px 20px;
+  }
+  
+}
